@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.1.1 -- 2020-06-22
+
+    - add create file section in conception notes
+    
 - 1.1.0 -- 2020-06-22
 
     - add LightDbSynchronizerService->getLogErrorMessages and getLogDebugMessages methods

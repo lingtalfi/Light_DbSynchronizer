@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-09 -> 2020-06-19
+2020-06-09 -> 2020-06-22
 
 
 
@@ -265,7 +265,18 @@ But the price to pay is to not forget to:
 
 
 
+Create file
+========
+2020-06-22
 
+
+A **create file** is a file that contains sql statements to create the tables for a given plugin.
+
+
+Our plugin basically parses the **create file** and can then synchronizes the current database with it. 
+
+
+  
 
 
 
