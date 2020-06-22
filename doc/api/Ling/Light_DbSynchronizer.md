@@ -1,6 +1,6 @@
 Ling/Light_DbSynchronizer
 ================
-2020-06-19 --> 2020-06-19
+2020-06-19 --> 2020-06-22
 
 
 
@@ -14,6 +14,8 @@ Table of contents
     - [LightDbSynchronizerService::setContainer](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setContainer.md) &ndash; Sets the container.
     - [LightDbSynchronizerService::setOptions](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setOptions.md) &ndash; Sets the options.
     - [LightDbSynchronizerService::synchronize](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronize.md) &ndash; and returns whether the synchronization was perfectly executed.
+    - [LightDbSynchronizerService::getLogErrorMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogErrorMessages.md) &ndash; Returns the logErrorMessages of this instance.
+    - [LightDbSynchronizerService::getLogDebugMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogDebugMessages.md) &ndash; Returns the logDebugMessages of this instance.
 
 
 Dependencies

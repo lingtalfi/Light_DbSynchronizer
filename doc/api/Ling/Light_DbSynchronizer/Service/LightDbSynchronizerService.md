@@ -4,7 +4,7 @@
 
 The LightDbSynchronizerService class
 ================
-2020-06-19 --> 2020-06-19
+2020-06-19 --> 2020-06-22
 
 
 
@@ -26,6 +26,8 @@ class <span class="pl-k">LightDbSynchronizerService</span>  {
 
 - Properties
     - protected [Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) [$container](#property-container) ;
+    - protected array [$logErrorMessages](#property-logErrorMessages) ;
+    - protected array [$logDebugMessages](#property-logDebugMessages) ;
     - private [Ling\SimplePdoWrapper\Util\MysqlInfoUtil](https://github.com/lingtalfi/SimplePdoWrapper/blob/master/doc/api/Ling/SimplePdoWrapper/Util/MysqlInfoUtil.md) [$mysqlInfoUtil](#property-mysqlInfoUtil) ;
     - private [Ling\SqlWizard\Util\MysqlStructureReader](https://github.com/lingtalfi/SqlWizard/blob/master/doc/api/Ling/SqlWizard/Util/MysqlStructureReader.md) [$mysqlStructureReader](#property-mysqlStructureReader) ;
     - private array [$options](#property-options) ;
@@ -35,6 +37,8 @@ class <span class="pl-k">LightDbSynchronizerService</span>  {
     - public [setContainer](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setContainer.md)([Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container) : void
     - public [setOptions](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setOptions.md)(array $options) : void
     - public [synchronize](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronize.md)(string $createFile, ?array $options = []) : bool
+    - public [getLogErrorMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogErrorMessages.md)() : array
+    - public [getLogDebugMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogDebugMessages.md)() : array
     - protected [synchronizeTableByInfoArray](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronizeTableByInfoArray.md)(string $table, array $fileInfo, array $options) : void
     - private [executeStatementByArray](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/executeStatementByArray.md)(string $table, array $stmts) : void
     - private [executeStatement](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/executeStatement.md)(string $stmt, ?string $statementLabel = null) : void
@@ -61,6 +65,18 @@ Properties
 - <span id="property-container"><b>container</b></span>
 
     This property holds the container for this instance.
+    
+    
+
+- <span id="property-logErrorMessages"><b>logErrorMessages</b></span>
+
+    This property holds the logErrorMessages for this instance.
+    
+    
+
+- <span id="property-logDebugMessages"><b>logDebugMessages</b></span>
+
+    This property holds the logDebugMessages for this instance.
     
     
 
@@ -100,6 +116,8 @@ Methods
 - [LightDbSynchronizerService::setContainer](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setContainer.md) &ndash; Sets the container.
 - [LightDbSynchronizerService::setOptions](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setOptions.md) &ndash; Sets the options.
 - [LightDbSynchronizerService::synchronize](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronize.md) &ndash; and returns whether the synchronization was perfectly executed.
+- [LightDbSynchronizerService::getLogErrorMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogErrorMessages.md) &ndash; Returns the logErrorMessages of this instance.
+- [LightDbSynchronizerService::getLogDebugMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogDebugMessages.md) &ndash; Returns the logDebugMessages of this instance.
 - [LightDbSynchronizerService::synchronizeTableByInfoArray](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronizeTableByInfoArray.md) &ndash; Synchronizes a table by the given info array.
 - [LightDbSynchronizerService::executeStatementByArray](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/executeStatementByArray.md) &ndash; Execute the given statements.
 - [LightDbSynchronizerService::executeStatement](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/executeStatement.md) &ndash; Executes the given statement, and logs it if necessary.

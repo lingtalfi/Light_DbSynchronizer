@@ -73,7 +73,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::getRenamedItems](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1173-L1210)
+See the source code for method [LightDbSynchronizerService::getRenamedItems](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1213-L1250)
 
 
 See Also

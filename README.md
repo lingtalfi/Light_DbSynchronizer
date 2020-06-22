@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19
+2020-06-19 -> 2020-06-22
 
 
 
@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.1.0 -- 2020-06-22
+
+    - add LightDbSynchronizerService->getLogErrorMessages and getLogDebugMessages methods
+    
 - 1.0.0 -- 2020-06-19
 
     - initial commit

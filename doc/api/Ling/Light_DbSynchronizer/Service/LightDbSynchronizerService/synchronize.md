@@ -24,7 +24,7 @@ public [LightDbSynchronizerService::synchronize](https://github.com/lingtalfi/Li
 Synchronize the database with the given create file,
 and returns whether the synchronization was perfectly executed.
 
-If not, details of problems are available via logs.
+If not, details of problems are available via logs, or via the getLogErrorMessages/getLogDebugMessages methods.
 
 
 See more details in the [Light_DbSynchronizer conception notes](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/pages/conception-notes.md).
@@ -109,7 +109,7 @@ Returns bool.
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::synchronize](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L164-L325)
+See the source code for method [LightDbSynchronizerService::synchronize](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L178-L339)
 
 
 See Also
@@ -117,5 +117,5 @@ See Also
 
 The [LightDbSynchronizerService](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService.md) class.
 
-Previous method: [setOptions](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setOptions.md)<br>Next method: [synchronizeTableByInfoArray](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/synchronizeTableByInfoArray.md)<br>
+Previous method: [setOptions](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/setOptions.md)<br>Next method: [getLogErrorMessages](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Service/LightDbSynchronizerService/getLogErrorMessages.md)<br>
 

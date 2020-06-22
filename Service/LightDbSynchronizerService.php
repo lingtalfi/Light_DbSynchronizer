@@ -25,6 +25,18 @@ class LightDbSynchronizerService
      */
     protected $container;
 
+    /**
+     * This property holds the logErrorMessages for this instance.
+     * @var array
+     */
+    protected $logErrorMessages;
+
+    /**
+     * This property holds the logDebugMessages for this instance.
+     * @var array
+     */
+    protected $logDebugMessages;
+
 
     /**
      * This property holds the mysqlInfoUtil for this instance.
@@ -70,6 +82,8 @@ class LightDbSynchronizerService
         $this->mysqlInfoUtil = null;
         $this->mysqlStructureReader = null;
         $this->options = [];
+        $this->logErrorMessages = [];
+        $this->logDebugMessages = [];
 
     }
 
@@ -98,7 +112,7 @@ class LightDbSynchronizerService
      * Synchronize the database with the given create file,
      * and returns whether the synchronization was perfectly executed.
      *
-     * If not, details of problems are available via logs.
+     * If not, details of problems are available via logs, or via the getLogErrorMessages/getLogDebugMessages methods.
      *
      *
      * See more details in the @page(Light_DbSynchronizer conception notes).
@@ -324,6 +338,28 @@ class LightDbSynchronizerService
         return true;
     }
 
+    /**
+     * Returns the logErrorMessages of this instance.
+     *
+     * @return array
+     */
+    public function getLogErrorMessages(): array
+    {
+        return $this->logErrorMessages;
+    }
+
+    /**
+     * Returns the logDebugMessages of this instance.
+     *
+     * @return array
+     */
+    public function getLogDebugMessages(): array
+    {
+        return $this->logDebugMessages;
+    }
+
+
+
 
 
     //--------------------------------------------
@@ -331,6 +367,7 @@ class LightDbSynchronizerService
     //--------------------------------------------
     /**
      * Synchronizes a table by the given info array.
+     *
      *
      *
      * The available options are:
@@ -1095,6 +1132,8 @@ class LightDbSynchronizerService
         if (true === $this->container->has('logger')) {
             $logger = $this->container->get("logger");
             $logger->log($msg, "db_synchronizer.error");
+            $this->logErrorMessages[] = $msg;
+
         }
 
         $stopAtFirstError = $this->options['stopAtFirstError'] ?? false;
@@ -1120,6 +1159,7 @@ class LightDbSynchronizerService
                  */
                 $logger = $this->container->get("logger");
                 $logger->log($msg, "db_synchronizer.debug");
+                $this->logDebugMessages[] = $msg;
             }
         }
     }
