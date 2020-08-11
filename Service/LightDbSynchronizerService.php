@@ -1159,9 +1159,9 @@ class LightDbSynchronizerService
                  */
                 $logger = $this->container->get("logger");
                 $logger->log($msg, "db_synchronizer.debug");
-                $this->logDebugMessages[] = $msg;
             }
         }
+        $this->logDebugMessages[] = $msg;
     }
 
 
