@@ -1,0 +1,31 @@
+1.0.0: 
+    - Ling:Bat:1.288
+    - Ling:Light:0.69.16
+    - Ling:Light_Database:1.14.9
+    - Ling:Light_Logger:1.11.3
+    - Ling:SimplePdoWrapper:1.30.14
+    - Ling:SqlWizard:1.13.4
+
+1.1.0: 
+    - Ling:Bat:1.288
+    - Ling:Light:0.69.16
+    - Ling:Light_Database:1.14.9
+    - Ling:Light_Logger:1.11.3
+    - Ling:SimplePdoWrapper:1.30.14
+    - Ling:SqlWizard:1.13.4
+
+1.1.1: 
+    - Ling:Bat:1.288
+    - Ling:Light:0.69.16
+    - Ling:Light_Database:1.14.9
+    - Ling:Light_Logger:1.11.3
+    - Ling:SimplePdoWrapper:1.30.14
+    - Ling:SqlWizard:1.13.4
+
+1.2.0: 
+    - Ling:Bat:1.288
+    - Ling:Light:0.69.16
+    - Ling:Light_Database:1.14.9
+    - Ling:Light_Logger:1.11.3
+    - Ling:SimplePdoWrapper:1.30.14
+    - Ling:SqlWizard:1.13.4

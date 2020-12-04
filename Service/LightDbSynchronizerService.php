@@ -302,7 +302,6 @@ class LightDbSynchronizerService
             //--------------------------------------------
             $addRemoveTables = array_merge($tablesToAdd, $tablesToRemove);
 
-
             if ($scope) {
 
                 $unchangedTables = array_diff($effectiveScope, $addRemoveTables);

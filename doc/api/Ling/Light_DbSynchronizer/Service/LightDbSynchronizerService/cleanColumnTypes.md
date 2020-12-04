@@ -58,7 +58,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::cleanColumnTypes](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L987-L1011)
+See the source code for method [LightDbSynchronizerService::cleanColumnTypes](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L986-L1010)
 
 
 See Also

@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.1 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.2.0 -- 2020-08-11
 
     - update LightDbSynchronizerService->logDebug, now can return logDebug messages on demand even with logDebug turned off
