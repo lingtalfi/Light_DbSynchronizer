@@ -4,7 +4,7 @@
 
 The LightDbSynchronizerService class
 ================
-2020-06-19 --> 2020-12-08
+2020-06-19 --> 2021-01-22
 
 
 
@@ -146,4 +146,4 @@ See the source code of [Ling\Light_DbSynchronizer\Service\LightDbSynchronizerSer
 
 SeeAlso
 ==============
-Previous class: [LightDbSynchronizerException](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Exception/LightDbSynchronizerException.md)<br>
+Previous class: [LightDbSynchronizerHelper](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Helper/LightDbSynchronizerHelper.md)<br>

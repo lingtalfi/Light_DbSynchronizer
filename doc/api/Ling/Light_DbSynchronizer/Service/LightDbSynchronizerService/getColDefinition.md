@@ -78,7 +78,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::getColDefinition](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1036-L1071)
+See the source code for method [LightDbSynchronizerService::getColDefinition](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1043-L1078)
 
 
 See Also

@@ -188,7 +188,6 @@ class LightDbSynchronizerService
             if (false === file_exists($createFile)) {
                 $this->error("File doesn't exist: $createFile.");
             }
-
             $createFileContent = file_get_contents($createFile);
 
 
@@ -199,7 +198,6 @@ class LightDbSynchronizerService
             $useDelete = $options['useDelete'] ?? true;
             $deleteMode = $options['deleteMode'] ?? 'flags';
             $dbTables = $this->container->get("database_info")->getTables();
-
 
             /**
              * @var $db LightDatabaseService
@@ -381,7 +379,7 @@ class LightDbSynchronizerService
      *
      *
      * @param string $table
-     * @param string $fileInfo
+     * @param array $fileInfo
      * @param array $options
      * @throws \Exception
      */
@@ -389,7 +387,6 @@ class LightDbSynchronizerService
     {
         $tableStatements = $options['tableStatements'];
         $renamedItems = $options['renamedItems'] ?? [];
-
 
         $forceChangeAlgo = true; // let this to false, unless you know what you are doing
         $hasChangeInColumns = false;
@@ -419,15 +416,16 @@ class LightDbSynchronizerService
         // detect type changes
         $columnTypes = $mysqlInfoUtil->getColumnTypes($table, true);
         $columnTypes = $this->cleanColumnTypes($columnTypes);
+        $cleanFileInfoColumnTypes = $this->cleanColumnTypes($fileInfo['columnTypes']);
 
-
-        foreach ($fileInfo['columnTypes'] as $col => $type) {
+        foreach ($cleanFileInfoColumnTypes as $col => $type) {
             if (array_key_exists($col, $columnTypes)) {
                 if ($columnTypes[$col] !== $type) {
                     $columnsToModify[] = $col;
                 }
             }
         }
+
 
 
         // detect nullability changes
@@ -466,6 +464,7 @@ class LightDbSynchronizerService
             $renamedColumns = $renamedItems['column'];
             foreach ($renamedColumns as $renamedTable => $items) {
                 if ($table === $renamedTable) {
+
                     foreach ($items as $col => $val) {
 
 
@@ -475,9 +474,11 @@ class LightDbSynchronizerService
                         ) {
 
 
-                            $alterColRename[$col] = $this->getColDefinition($val, $fileInfo, "rename", [
+                            $statement = $this->getColDefinition($val, $fileInfo, "rename", [
                                 "oldName" => $col,
                             ]);
+                            $alterColRename[$col] = $statement;
+                            $alterStmts[] = $statement;
                             $hasChangeInColumns = true;
 
                             unset($columnsToAdd[$index1]);
@@ -488,6 +489,8 @@ class LightDbSynchronizerService
                 }
             }
         }
+
+
 
 
         $alterColAdd = [];
@@ -519,6 +522,7 @@ class LightDbSynchronizerService
             $alterColUpdate[$col] = $colDef;
             $hasChangeInColumns = true;
         }
+
 
 
         //--------------------------------------------
@@ -658,6 +662,7 @@ class LightDbSynchronizerService
             $alterStmts[] = $s;
             $alterEngine[] = $s;
         }
+
 
 
         //--------------------------------------------
@@ -989,18 +994,20 @@ class LightDbSynchronizerService
         foreach ($columnTypes as $col => $type) {
             if (preg_match('!([^(]+)\(([0-9]+)\)!', $type, $match)) {
                 $baseType = $match[1];
-                $maxDisplayWidth = $match[2];
+//                $maxDisplayWidth = $match[2];
+
+                /**
+                 * display width is deprecated as of MySQL 8.0.17,
+                 * therefore we don't care of it in previous version.
+                 * https://dev.mysql.com/doc/refman/8.0/en/numeric-type-attributes.html
+                 **/
                 switch ($baseType) {
                     case "int":
                     case "smallint":
                     case "mediumint":
                     case "bigint":
-                        $type = $baseType;
-                        break;
                     case "tinyint":
-                        if ('1' !== $maxDisplayWidth) {
-                            $type = $baseType;
-                        }
+                        $type = $baseType;
                         break;
                 }
             }
@@ -1150,6 +1157,7 @@ class LightDbSynchronizerService
      */
     private function logDebug(string $msg)
     {
+
         $useDebug = $this->options['useDebug'] ?? false;
         if (true === $useDebug) {
             if (true === $this->container->has('logger')) {

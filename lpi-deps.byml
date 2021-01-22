@@ -1,47 +1,55 @@
 1.0.0: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Database:1.14.10
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
 
 1.1.0: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Database:1.14.10
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
 
 1.1.1: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Database:1.14.10
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
 
 1.2.0: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Database:1.14.10
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
 
 1.2.1: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Database:1.14.10
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
 
 1.2.2: 
-    - Ling:Bat:1.293
-    - Ling:Light:0.69.18
-    - Ling:Light_Database:1.14.11
-    - Ling:Light_Logger:1.11.4
-    - Ling:SimplePdoWrapper:1.30.15
-    - Ling:SqlWizard:1.13.5
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.6+
+
+1.2.3: 
+    - Ling:Bat:1.301+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Database:1.14.11+
+    - Ling:Light_Logger:1.11.5+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.7+
