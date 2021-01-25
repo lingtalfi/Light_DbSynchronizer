@@ -70,7 +70,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::addStatementsForIndex](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1092-L1123)
+See the source code for method [LightDbSynchronizerService::addStatementsForIndex](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L1014-L1045)
 
 
 See Also

@@ -46,7 +46,7 @@ Returns [MysqlStructureReader](https://github.com/lingtalfi/SqlWizard/blob/maste
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::getMysqlStructureReader](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L896-L902)
+See the source code for method [LightDbSynchronizerService::getMysqlStructureReader](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L801-L807)
 
 
 See Also

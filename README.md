@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.5 -- 2021-01-25
+
+    - update LightDbSynchronizerService, fix primary key remove/create problems, add column order detection feature
+  
 - 1.2.4 -- 2021-01-25
 
     - update conception notes, add clarifications
