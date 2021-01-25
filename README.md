@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19 -> 2021-01-22
+2020-06-19 -> 2021-01-25
 
 
 
@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.4 -- 2021-01-25
+
+    - update conception notes, add clarifications
+  
 - 1.2.3 -- 2021-01-22
 
     - add LightDbSynchronizerHelper class
