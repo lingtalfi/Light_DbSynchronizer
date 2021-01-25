@@ -59,18 +59,25 @@ class LightDbSynchronizerHelper
      * So for instance if your create file's first defined table is lud_user, then the scope will be all tables in the current database
      * which starts with the prefix "lud_".
      *
+     * Available options are:
+     * - scope: array=null, the scope to use
+     *
      *
      *
      *
      * @param string $planetDotName
      * @param LightServiceContainerInterface $container
+     * @param array $options
      */
-    public static function synchronizePlanetCreateFile(string $planetDotName, LightServiceContainerInterface $container)
+    public static function synchronizePlanetCreateFile(string $planetDotName, LightServiceContainerInterface $container, array $options = [])
     {
 
         $createFile = $container->getApplicationDir() . "/universe/" . PlanetTool::getPlanetSlashNameByDotName($planetDotName) . "/assets/fixtures/create-structure.sql";
         if (true === file_exists($createFile)) {
-            $scope = self::guessScopeByCreateFile($createFile, $container);
+            $scope = $options['scope'] ?? null;
+            if (null === $scope) {
+                $scope = self::guessScopeByCreateFile($createFile, $container);
+            }
             $sy = $container->get("db_synchronizer");
             $sy->synchronize($createFile, [
                 'scope' => $scope,

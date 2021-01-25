@@ -16,7 +16,7 @@ Description
 ================
 
 
-public static [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Helper/LightDbSynchronizerHelper/synchronizePlanetCreateFile.md)(string $planetDotName, [Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container) : void
+public static [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/doc/api/Ling/Light_DbSynchronizer/Helper/LightDbSynchronizerHelper/synchronizePlanetCreateFile.md)(string $planetDotName, [Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container, ?array $options = []) : void
 
 
 
@@ -27,6 +27,9 @@ The delete/update scope used is all the tables which start with the first define
 
 So for instance if your create file's first defined table is lud_user, then the scope will be all tables in the current database
 which starts with the prefix "lud_".
+
+Available options are:
+- scope: array=null, the scope to use
 
 
 
@@ -40,6 +43,10 @@ Parameters
     
 
 - container
+
+    
+
+- options
 
     
 
@@ -58,7 +65,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L68-L79)
+See the source code for method [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L72-L86)
 
 
 See Also

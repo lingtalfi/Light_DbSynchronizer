@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.6 -- 2021-01-25
+
+    - update LightDbSynchronizerHelper::synchronizePlanetCreateFile, add scope option
+  
 - 1.2.5 -- 2021-01-25
 
     - update LightDbSynchronizerService, fix primary key remove/create problems, add column order detection feature
