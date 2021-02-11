@@ -89,3 +89,13 @@
     - Ling:UniverseTools:1.22.14+
     - Ling:Bat:1.303+
     - Ling:Light_Logger:1.11.5+
+
+1.2.8: 
+    - Ling:Light:0.69.21+
+    - Ling:Light_Database:1.14.11+
+    - Ling:SimplePdoWrapper:1.30.16+
+    - Ling:SqlWizard:1.13.7+
+    - Ling:UniverseTools:1.22.14+
+    - Ling:Bat:1.303+
+    - Ling:Light_DatabaseInfo:1.12.3+
+    - Ling:Light_Logger:1.11.5+
