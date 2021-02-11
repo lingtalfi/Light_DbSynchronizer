@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerHelper::guessScopeByCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L30-L51)
+See the source code for method [LightDbSynchronizerHelper::guessScopeByCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L31-L52)
 
 
 See Also

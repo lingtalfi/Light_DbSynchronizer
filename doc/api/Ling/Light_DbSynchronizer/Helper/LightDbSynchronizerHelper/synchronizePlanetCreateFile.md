@@ -65,7 +65,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L72-L86)
+See the source code for method [LightDbSynchronizerHelper::synchronizePlanetCreateFile](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Helper/LightDbSynchronizerHelper.php#L73-L90)
 
 
 See Also

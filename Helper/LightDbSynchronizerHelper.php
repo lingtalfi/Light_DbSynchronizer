@@ -7,6 +7,7 @@ namespace Ling\Light_DbSynchronizer\Helper;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_Database\Service\LightDatabaseService;
 use Ling\Light_DbSynchronizer\Exception\LightDbSynchronizerException;
+use Ling\Light_DbSynchronizer\Service\LightDbSynchronizerService;
 use Ling\SimplePdoWrapper\Util\MysqlInfoUtil;
 use Ling\SqlWizard\Util\MysqlStructureReader;
 use Ling\UniverseTools\PlanetTool;
@@ -78,6 +79,9 @@ class LightDbSynchronizerHelper
             if (null === $scope) {
                 $scope = self::guessScopeByCreateFile($createFile, $container);
             }
+            /**
+             * @var $sy LightDbSynchronizerService
+             */
             $sy = $container->get("db_synchronizer");
             $sy->synchronize($createFile, [
                 'scope' => $scope,

@@ -46,7 +46,7 @@ Returns [MysqlInfoUtil](https://github.com/lingtalfi/SimplePdoWrapper/blob/maste
 
 Source Code
 ===========
-See the source code for method [LightDbSynchronizerService::getMysqlInfoUtil](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L815-L822)
+See the source code for method [LightDbSynchronizerService::getMysqlInfoUtil](https://github.com/lingtalfi/Light_DbSynchronizer/blob/master/Service/LightDbSynchronizerService.php#L825-L832)
 
 
 See Also

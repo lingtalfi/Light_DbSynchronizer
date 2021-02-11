@@ -7,6 +7,7 @@ namespace Ling\Light_DbSynchronizer\Service;
 use Ling\Bat\ArrayTool;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_Database\Service\LightDatabaseService;
+use Ling\Light_DatabaseInfo\Service\LightDatabaseInfoService;
 use Ling\Light_DbSynchronizer\Exception\LightDbSynchronizerException;
 use Ling\Light_Logger\LightLoggerService;
 use Ling\SimplePdoWrapper\Util\MysqlInfoUtil;
@@ -189,6 +190,8 @@ class LightDbSynchronizerService
         try {
 
 
+
+
             $this->logDebug("--clean--");
             $this->logDebug("Starting synchronization with createFile \"$createFile\".");
 
@@ -202,10 +205,17 @@ class LightDbSynchronizerService
             $renamedItems = $this->getRenamedItems($createFileContent);
 
 
+
             $scope = $options['scope'] ?? [];
             $useDelete = $options['useDelete'] ?? true;
             $deleteMode = $options['deleteMode'] ?? 'flags';
-            $dbTables = $this->container->get("database_info")->getTables();
+
+
+            /**
+             * @var $dbInfo LightDatabaseInfoService
+             */
+            $dbInfo = $this->container->get("database_info");
+            $dbTables = $dbInfo->getTables();
 
             /**
              * @var $db LightDatabaseService

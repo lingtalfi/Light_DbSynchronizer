@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19 -> 2021-01-25
+2020-06-19 -> 2021-02-11
 
 
 
@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.7 -- 2021-02-11
+
+    - fix service not declaring dependency to Light_DatabaseInfo planet
+  
 - 1.2.6 -- 2021-01-25
 
     - update LightDbSynchronizerHelper::synchronizePlanetCreateFile, add scope option

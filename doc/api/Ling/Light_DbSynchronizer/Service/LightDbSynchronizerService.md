@@ -4,7 +4,7 @@
 
 The LightDbSynchronizerService class
 ================
-2020-06-19 --> 2021-01-25
+2020-06-19 --> 2021-02-11
 
 
 

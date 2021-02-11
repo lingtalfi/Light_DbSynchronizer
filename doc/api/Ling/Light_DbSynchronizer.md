@@ -1,6 +1,6 @@
 Ling/Light_DbSynchronizer
 ================
-2020-06-19 --> 2021-01-25
+2020-06-19 --> 2021-02-11
 
 
 
@@ -29,6 +29,7 @@ Dependencies
 - [SqlWizard](https://github.com/lingtalfi/SqlWizard)
 - [UniverseTools](https://github.com/lingtalfi/UniverseTools)
 - [Bat](https://github.com/lingtalfi/Bat)
+- [Light_DatabaseInfo](https://github.com/lingtalfi/Light_DatabaseInfo)
 - [Light_Logger](https://github.com/lingtalfi/Light_Logger)
 
 
