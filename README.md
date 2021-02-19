@@ -90,7 +90,11 @@ $logger.methods_collection:
 
 History Log
 =============
-  
+
+- 1.2.9 -- 2021-02-19
+
+    - upgrade dependencies
+
 - 1.2.8 -- 2021-02-11
 
     - fix non synchronized dependencies between uni style and lpi style
