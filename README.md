@@ -91,6 +91,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.10 -- 2021-02-23
+
+    - Update dependencies
+
 - 1.2.9 -- 2021-02-19
 
     - upgrade dependencies
