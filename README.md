@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19 -> 2021-02-11
+2020-06-19 -> 2021-02-25
 
 
 
@@ -90,6 +90,10 @@ $logger.methods_collection:
 
 History Log
 =============
+
+- 1.2.13 -- 2021-02-25
+
+    - fix assets/map dir removed
 
 - 1.2.12 -- 2021-02-23
 
