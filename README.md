@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19 -> 2021-03-05
+2020-06-19 -> 2021-03-15
 
 
 
@@ -95,6 +95,10 @@ $logger.methods_collection:
 
 History Log
 =============
+
+- 1.2.15 -- 2021-03-15
+
+    - update planet to adapt Ling.Light:0.70.0
 
 - 1.2.14 -- 2021-03-05
 
