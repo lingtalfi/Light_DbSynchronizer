@@ -4,7 +4,7 @@
 
 The LightDbSynchronizerException class
 ================
-2020-06-19 --> 2021-03-15
+2020-06-19 --> 2021-04-06
 
 
 
