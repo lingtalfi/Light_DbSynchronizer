@@ -169,3 +169,13 @@
     - Ling:SimplePdoWrapper:1.30.17+
     - Ling:SqlWizard:1.13.8+
     - Ling:UniverseTools:1.22.32+
+
+1.2.17: 
+    - Ling:Bat:1.312+
+    - Ling:Light:0.70.2+
+    - Ling:Light_Database:1.14.21+
+    - Ling:Light_DatabaseInfo:1.12.6+
+    - Ling:Light_Logger:1.11.8+
+    - Ling:SimplePdoWrapper:1.30.17+
+    - Ling:SqlWizard:1.13.8+
+    - Ling:UniverseTools:1.22.32+

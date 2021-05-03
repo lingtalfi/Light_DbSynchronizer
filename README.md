@@ -96,6 +96,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.2.17 -- 2021-05-03
+
+    - Update dependencies to Ling.Light_Logger (pushed by SubscribersUtil)
+
 - 1.2.16 -- 2021-04-06
 
     - update LightDbSynchronizerService->executeStatement, now returns more useful debug messages
