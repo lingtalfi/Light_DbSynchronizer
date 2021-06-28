@@ -68,6 +68,10 @@ db_synchronizer:
 History Log
 =============
 
+- 1.2.22 -- 2021-06-28
+
+    - fix service not able to create new columns with non-nullable date/datetime
+  
 - 1.2.21 -- 2021-06-28
 
     - fix api wrong reference to Ling.Light_Logger

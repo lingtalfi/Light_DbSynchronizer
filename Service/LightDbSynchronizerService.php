@@ -321,6 +321,7 @@ class LightDbSynchronizerService
 
                 if ($unchangedTables) {
 
+
                     $this->logDebug(count($unchangedTables) . " more table(s) to scan.");
                     foreach ($unchangedTables as $table) {
                         if (array_key_exists($table, $info)) {
@@ -526,8 +527,9 @@ class LightDbSynchronizerService
             $colDef = $this->getColDefinition($col, $fileInfo);
             $alterStmts[] = $colDef;
             $alterColAdd[$col] = $colDef;
-
         }
+
+
         foreach ($columnsToModify as $col) {
             $colDef = $this->getColDefinition($col, $fileInfo, "update");
             $alterStmts[] = $colDef;
@@ -969,15 +971,33 @@ class LightDbSynchronizerService
                 }
 
 
+                $colType = strtoupper($fileInfo['columnTypes'][$col]);
+                $isNullable = $fileInfo['columnNullables'][$col];
+
+
+
                 $s .= '`' . $col . '`';
+                $s .= ' ' . $colType;
 
 
-                $s .= ' ' . strtoupper($fileInfo['columnTypes'][$col]);
-                if (true === $fileInfo['columnNullables'][$col]) {
+                if (true === $isNullable) {
                     $s .= ' NULL';
                 } else {
                     $s .= ' NOT NULL';
                 }
+
+
+                if ('add' === $type) {
+
+                    if ('DATETIME' === $colType && false === $isNullable) {
+                        $datetime = date("Y-m-d H:i:s");
+                        $s .= " DEFAULT '$datetime'";
+                    } elseif ('DATE' === $colType && false === $isNullable) {
+                        $date = date("Y-m-d");
+                        $s .= " DEFAULT '$date'";
+                    }
+                }
+
 
                 if ($col === $fileInfo['ai']) {
                     $s .= ' AUTO_INCREMENT';
