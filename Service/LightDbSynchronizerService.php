@@ -9,7 +9,7 @@ use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_Database\Service\LightDatabaseService;
 use Ling\Light_DatabaseInfo\Service\LightDatabaseInfoService;
 use Ling\Light_DbSynchronizer\Exception\LightDbSynchronizerException;
-use Ling\Light_Logger\LightLoggerService;
+use Ling\Light_Logger\Service\LightLoggerService;
 use Ling\SimplePdoWrapper\Util\MysqlInfoUtil;
 use Ling\SqlWizard\Tool\SqlWizardGeneralTool;
 use Ling\SqlWizard\Util\MysqlStructureReader;

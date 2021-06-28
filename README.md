@@ -1,6 +1,6 @@
 Light_DbSynchronizer
 ===========
-2020-06-19 -> 2021-04-25
+2020-06-19 -> 2021-06-28
 
 
 
@@ -68,6 +68,10 @@ db_synchronizer:
 History Log
 =============
 
+- 1.2.21 -- 2021-06-28
+
+    - fix api wrong reference to Ling.Light_Logger
+  
 - 1.2.20 -- 2021-06-25
 
     - update api, now use Ling.Light_Logger open registration system
